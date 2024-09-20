@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Is PseudoClass</title>
+    <style>
+         :is(#test1 , #test2) h1,p{
+            font-family: arial;
+            color: red;
+        }
+        e>
+         :is(#test1 , #test2) h1,p:hover{
+
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Is PseudoClass</h1>
+    <div id="test1">
+     <h1>Section 1</h1>
+     <h2>Sub Heading</h2>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vel, adipisci commodi itaque temporibus, blanditiis recusandae consequatur esse doloribus cum, consectetur dolore. Quam iure officiis molestiae placeat, laudantium porro. Voluptatum perferendis labore fuga sed eligendi a, cum saepe facere deserunt libero illum ut eius nulla nobis rem, nostrum quos dolor?
+     </p>
+     <h3>Sub Heading 2</h3>
+     <P>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores?
+     </P>
+     <hr/>
+    </div>
+    <div id="test2">
+        <h1>Section 2</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis quibusdam animi ut? Architecto eveniet, nesciunt rerum debitis quisquam animi reprehenderit deserunt facere, quia molestias delectus corporis, assumenda aliquid incidunt id? Sit exercitationem dolore minus consectetur officiis eum incidunt impedit omnis sint nobis est, at ullam voluptates a nam perferendis?
+        </p>
+    </div>
+</body>
+</html>

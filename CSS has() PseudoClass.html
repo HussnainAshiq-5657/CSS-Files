@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS has() PseudoClass</title>
+    <style>
+        div{
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        div:has(h2 + p){
+            background-color: pink;
+        }
+        h2:has(+ p){
+            color: red;
+        }
+        div:not(:has(h2)){
+            color: tomato;
+            font-size: 30px;
+        }
+        div:has(h3)li{
+            color: red;
+        }
+        li::marker{
+            color: aquamarine;
+        }
+        div:has(*:empty){
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+   <section class="abc">
+    
+        <h2>Yahoo Baba</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus nam voluptatem unde maxime tempora, veniam adipisci officiis asperiores minima.
+        </p>
+   <section>
+</div>
+   <div>
+    <h2>Just Testing</h2>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam impedit eaque error omnis totam quod sint maiores eos doloribus!
+     </p>
+     <ul>
+        <li>Apple</li>
+        <li>Banaana</li>
+        <li>PineApple</li>
+        <li>Guava</li>
+       </ul>
+   </div>
+   <div>
+   <h3>Just Testing</h3> 
+   <ul>
+    <li></li>
+    <li>Banaana</li>
+    <li>PineApple</li>
+    <li>Guava</li>
+   </ul>
+   </div>
+</body>
+</html>

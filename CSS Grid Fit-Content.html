@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Fit-Content</title>
+    <style>
+ body{
+    font-family: arial,verdana;
+ }
+ h1{
+    margin: 0px 0px 0px 40px;
+ }
+ .container{
+     width: 650px;
+    background-color: #eee;
+    margin: 0px 0px 0px 56px;
+    display: grid;
+    grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+    grid-template-rows: repeat(2, minmax(120px, min-content));
+    grid-auto-rows: 80px;
+ }
+ .items1{
+             background-color: tomato;
+      }
+      .items2{
+        background-color: lightgreen;
+    }
+    .items3{
+        background-color: saddlebrown;
+    }
+    .items4{
+        background-color: hotpink;
+        
+    }
+    .items5{
+        background-color: saddlebrown;
+    }
+    .items6{
+        background-color: hotpink;
+        grid-column-end: ;
+    }
+    .items{
+        font-weight: bold;
+        padding: 10%;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Fit-Content<h1>
+        <div class="container">
+            <div class="items items1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fuga expedita officiis velit quod vel aliquam? Et accusamus, provident voluptas sunt ducimus omnis aliquam a molestiae soluta optio amet corrupti, nobis rerum dolorem odit labore reiciendis numquam. Quas ducimus vero incidunt facilis, veritatis dolorum, voluptatem dicta magni consequatur ipsam maiores porro modi impedit quod laudantium tempora voluptatibus blanditiis alias aliquam. Cupiditate facilis alias at, ad voluptatum ipsam laboriosam voluptas odio vel incidunt, explicabo culpa quis ducimus voluptate asperiores ut illo quidem tempore fugit veniam cum delectus dolorum nulla! Sapiente porro ex, est necessitatibus cupiditate maiores ipsam at quae accusamus ipsum?</div>
+            <div class="items items2">Two</div>
+            <div class="items items3">Three Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam error iure, magni eveniet quidem tempore ducimus impedit quia repellat ut ipsum optio animi beatae excepturi velit odit nam vero ipsam vitae modi ex magnam earum. Eius pariatur voluptatem ipsum quod rerum molestiae reiciendis voluptate asperiores ea qui. Suscipit velit laboriosam vel eligendi quae tempora est illum? Rerum delectus at nam laboriosam, amet nulla beatae illo aperiam voluptas nihil exercitationem ex autem, saepe deserunt impedit doloremque quam eligendi dolore. Nam enim animi velit distinctio ullam quos error pariatur, corporis sed recusandae mollitia rerum et tempore molestias, explicabo nulla doloremque voluptate ducimus. Numquam modi accusamus veniam corporis consequuntur enim aliquam, et autem eaque odit? Nobis at perspiciatis, a sit eius in tempora eveniet ducimus deleniti enim voluptas architecto inventore ipsum fugit doloremque quod minus, quia fugiat dolor? Quia facilis officia facere illo molestias modi harum, aliquam quo, eius exercitationem in expedita ex fugiat aperiam amet sit eum at similique deleniti pariatur. Est dolorem molestiae, minus temporibus consectetur perferendis soluta distinctio facilis numquam illum non odit nemo incidunt voluptas doloremque nostrum laudantium eum pariatur nulla! Vitae fugiat illo corporis at reprehenderit fugit itaque repellat. Cumque excepturi repudiandae accusamus, doloremque explicabo esse eius odit?</div>
+            <div class="items items4">Four</div>
+            <div class="items items5">Five</div>
+            <div class="items items6">Six</div>
+        </div>
+</body>
+</html>

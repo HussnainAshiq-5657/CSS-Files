@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Visibility</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        h1{
+            text-align: center;
+        }
+        ul{
+            visibility: visible;
+        }
+        #first{
+    width: 400px;
+    height: 300px;
+    border: 3px solid firebrick;
+    padding: 10px;
+    margin-bottom: 30px;
+
+        }
+        tr.second{
+            visibility: collapse;
+        }
+        td.third{
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Visibility</h1>
+    <ul>
+        <li>Some Text 1</li>
+        <li>Some Text 2</li>
+        <li>Some Text 3</li>
+        <li>Some Text 4</li>
+        <li>Some Text 5</li>
+    </ul>
+<div id="first">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, debitis perspiciatis! Quas distinctio harum voluptatum iure dicta quae sint dolor, veritatis, vel pariatur recusandae laboriosam velit commodi. Minus, commodi accusamus.
+ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, animi itaque ea ducimus voluptates atque, adipisci, tenetur ut exercitationem reprehenderit minima veniam temporibus laborum corrupti aperiam error sequi. Consequatur, id?
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellat expedita nemo unde cupiditate minima. Non, ex, porro maxime distinctio facere ipsa eum pariatur neque ea modi ut. Molestiae, obcaecati!
+</div>
+<table border="1px">
+    <tr>
+        <td>Baba</td>
+        <td>Yahoo</td>
+    </tr>
+    <tr class="second">
+        <td>Yahoo</td>
+        <td>Baba</td>
+    </tr>
+    <tr>
+        <td class="third">Baba</td>
+        <td>Yahoo</td>
+    </tr>
+</table>
+</body>
+</html>

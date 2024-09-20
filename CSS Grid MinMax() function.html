@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid MinMax() Function</title>
+    <style>
+        body{
+            font-family: arial,verdana;
+        }
+        h1{
+            margin: 23px 0px 0px 134px;
+        }
+        .container{
+            width: 80%;
+              background-color:#eee;
+              margin: 23px 0px 0px 156px;
+             display: grid;
+             grid-template-columns:  minmax(150px, 1fr) 1fr 1fr 1fr ;
+             grid-template-rows: repeat(2,MinMax(150px, min-content));
+             grid-gap:5px;
+        }
+        .items1{
+            background-color:tomato;
+        }
+        .items2{
+            background-color: pink;
+        }
+        .items3{
+            background-color:lightgreen;
+        }
+        .items4{
+            background-color:mediumpurple;
+        }
+        .items5{
+            background-color: wheat;
+        }
+        .items6{
+            background-color: slateblue;
+        }
+        .items7{
+            background-color: hotpink;
+        }
+        .items8{
+            background-color: lightcoral;
+        }
+        .items{
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid MinMax() Function</h1>
+    <div class="container">
+        <div class="items items1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officiis inventore repellat vero, consequatur quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quisquam deserunt neque fugit optio vitae!</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four </div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab odio id. Ad odit dolores a! Inventore voluptate vitae porro cumque accusantium labore quidem illum maxime! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, reiciendis. </div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </div>
+</body>
+</html>

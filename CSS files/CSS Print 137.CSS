@@ -1,0 +1,8 @@
+@page :first{
+    size: A4 landscape;
+    margin: 20mm;
+}
+@page:right{
+    size: 3in 5in;
+    margin: 10mm;
+}

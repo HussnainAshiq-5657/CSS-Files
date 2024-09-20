@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascading Layer</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        @layer three,one,two;
+      
+       @layer three{
+            #second{
+            color: turquoise;
+         }
+         }
+        @layer two{
+            .first{
+            color: blue;
+        }
+        }
+        @layer one{
+        p{
+            color:red !important;
+        }
+       }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Cascading Layer</h1>
+    <h2>
+        <p class="first" id="second" style="color: blueviolet;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet amet, at consequuntur recusandae, nobis officiis, impedit fugit nesciunt quo praesentium quidem accusantium fuga voluptatem placeat expedita quos vitae quibusdam.
+        </p>
+    </h2>
+</body>
+</html>

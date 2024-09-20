@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Align-Self</title>
+    <style>
+        body{
+            font-family: arial, verdana;
+        }
+        h1{
+            margin: 12px 0px 0px 14px;
+        }
+        .container{
+            height: 400px;
+            width: 300px;
+            border: 1px solid rgba(255,0,0,0.4);
+            background-color: #eee;
+            margin: 14px 0px 0px 12px;
+            display: flex;
+            align-items: center;
+        }
+        .items1{
+            background-color: pink;
+            align-self: stretch;
+        }
+       .items2{
+        background-color: violet;
+       }
+       .items3{
+        background-color: saddlebrown;
+       }
+       .items4{
+        background-color:tomato;
+        align-self: flex-end;
+       }
+        
+        .items{
+            font-size: 18px;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flexbox Align-Self</h1>
+    <div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+    </div>
+</body>
+</html>

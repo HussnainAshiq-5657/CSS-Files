@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nesting</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        #menu{
+            & li{
+              background-color: pink;
+            }
+            & a{
+                text-decoration-line: none;
+                color: red;
+                &:hover{
+             color: white;
+             background-color: tomato;
+                }
+            }
+        }
+        #box{
+            > h2{
+                color: green;
+            }
+             .demo{
+                color: red;
+            }
+            ~ h2{
+                color: blue;
+            }
+        }
+        .foo{
+            color: tomato;
+        }
+        .foo-bar{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Nesting</h1>
+    <ul id="menu">
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+    </ul>
+    <div id="box">
+        <h2>Test 3</h2>
+        <div>
+            <h2>Test 4</h2>
+        </div>
+        <h3 class="demo">Another Test</h3>
+    </div>
+    <h2>Test 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maiores illo, necessitatibus cumque dolore aliquid, unde, tempora est earum quo tenetur? Adipisci deserunt unde modi? Eius maxime facere consectetur? Molestias.</p>
+    <h2>Test 2</h2>
+    <div class="foo">
+        Just Testing 1
+    </div>
+    <div class="foo-bar"></div>
+        Just Testing 2
+    </div>
+</body>
+</html>

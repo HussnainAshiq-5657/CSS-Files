@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Scroll-BAR Styling</title>
+    <style>
+     #test{
+        width: 400px;
+        height: 400px;
+        border: 3px solid firebrick;
+        margin: 50px 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: auto;
+     }
+      #test::-webkit-scrollbar{
+        width: 10px;
+      }
+      #test::-webkit-scrollbar-track{
+        border-radius:20%;
+        background-color: #f5f5f5;
+        box-shadow: 0px 0px 6px rgba(0,0,0,0.3),inset;
+      }
+      #test::-webkit-scrollbar-thumb{
+        border-radius: 10%;
+        background: linear-gradient(red,yellow);
+
+      }
+      #test::-webkit-scrollbar-corner{
+        
+        background:linear-gradient(red,yellow);
+      }
+     
+    </style>
+</head>
+<body>
+    <h1>CSS Scroll-BAR Styling</h1>
+    <div id="test">
+        <img src="Pictures/Flower.avif" alt="Picture Of Flower">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor nisi, ab laboriosam exercitationem rerum totam aspernatur voluptatum amet molestias eligendi explicabo ipsum voluptas, minima ad, aperiam corrupti. Nihil, quasi.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur officiis est maiores obcaecati maxime consequuntur veniam a deleniti iusto dolor eos neque, pariatur velit repudiandae blanditiis excepturi quas laborum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore omnis, distinctio quod accusantium porro repudiandae dicta provident ad aperiam ipsa? Voluptate quia ut temporibus pariatur error exercitationem eos aperiam!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor officiis sit nemo veritatis numquam possimus a in, porro, maxime odit aspernatur consequuntur eos distinctio consectetur ullam atque provident. Assumenda, sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum enim omnis consequuntur officia esse laboriosam sit hic nam aspernatur nulla commodi maxime nesciunt, quam delectus nisi magni, quas temporibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim nostrum quisquam error, debitis voluptatum nihil, doloribus sed atque molestias, rem dignissimos corporis voluptate sequi. Omnis eaque deleniti veniam tempora.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In placeat magnam error possimus, nam commodi ut voluptatem labore expedita quasi. Praesentium a magni error deleniti iure, explicabo debitis numquam quam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa omnis quis temporibus voluptate laudantium, aut in consequuntur iusto aliquid tempora alias inventore libero vel recusandae nam quo assumenda distinctio deserunt!
+    </div>
+</body>
+</html>

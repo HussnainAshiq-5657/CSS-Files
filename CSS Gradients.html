@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+    <style>
+        h1{
+            color:transparent;
+            text-shadow: 5px 5px 3px orange;
+            background-image: url(Pictures/Disha.jpeg);
+            font-size: 67px;
+            font-family: impact;
+            background-clip: text;
+        }
+        #first{
+
+            width: 450px;
+            height: 300px;
+            padding: 30px;
+            border: 3px double hotpink;
+            margin-bottom: 56px;
+            background:repeating-linear-gradient(45deg,orange 50%, hotpink 20%,firebrick,red,blue);
+            float: left;
+         
+        }
+        #second{
+            width: 450px;
+            height: 300px;
+            padding: 30px;
+            border: 3px double hotpink;
+            background:radial-gradient(farthest-side at 50% 14%,red 5%, yellow 25%,green 50%);
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">CSS Gradients</h1>
+    <div id="first">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quas quibusdam exercitationem consequatur! Dolorem asperiores id blanditiis voluptas sint! Quisquam totam facere officiis culpa quasi id natus laborum debitis iusto!
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo placeat accusantium, ad officiis iste minima quae, qui velit eum sit exercitationem cupiditate, itaque commodi ratione aut omnis nobis! Ipsam?
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem ratione libero commodi dolores, consectetur nihil officiis ut provident voluptatem corporis sed, eveniet, debitis expedita corrupti molestias recusandae perferendis illo.
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum officia nobis assumenda fuga unde aperiam eligendi reiciendis? In, ullam expedita illum saepe impedit ad distinctio animi sed a doloremque?
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias esse dicta possimus natus iure eius? Fugiat nesciunt minus ex culpa, in ut corrupti incidunt expedita esse! Quibusdam saepe qui earum.
+    </div>
+    <div id="second">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quas quibusdam exercitationem consequatur! Dolorem asperiores id blanditiis voluptas sint! Quisquam totam facere officiis culpa quasi id natus laborum debitis iusto!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo placeat accusantium, ad officiis iste minima quae, qui velit eum sit exercitationem cupiditate, itaque commodi ratione aut omnis nobis! Ipsam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem ratione libero commodi dolores, consectetur nihil officiis ut provident voluptatem corporis sed, eveniet, debitis expedita corrupti molestias recusandae perferendis illo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum officia nobis assumenda fuga unde aperiam eligendi reiciendis? In, ullam expedita illum saepe impedit ad distinctio animi sed a doloremque?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias esse dicta possimus natus iure eius? Fugiat nesciunt minus ex culpa, in ut corrupti incidunt expedita esse! Quibusdam saepe qui earum.
+       </div>
+</body>
+</html>

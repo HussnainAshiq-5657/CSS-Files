@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Align Form-Elements</title>
+    <style>
+        body {
+            font-family: arial, verdana;
+        }
+
+        h1 {
+            margin: 14px 0px 0px 34px;
+        }
+
+        #wrapper {
+            background-color: #eee;
+            padding: 20px;
+            margin: 50px;
+            list-style: none;
+        }
+
+        #wrapper li {
+            display: flex;
+            padding: 5px 0px;
+            justify-content: center;
+        }
+
+        #wrapper li label {
+            flex: 1;
+        }
+
+        #wrapper li input {
+            flex: 9;
+        }
+
+        @media screen and (min-width:1200px) {
+            #wrapper li input {
+                flex: 14;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            #wrapper li input {
+                flex: 8;
+            }
+        }
+
+        @media screen and (min-width:500px) {
+            #wrapper li input {
+                flex: 3;
+            }
+        }
+
+        @media screen and (min-width:560px) {
+            #wrapper li{
+                flex-direction: column;
+            }
+            #wrapper li input {
+                flex: 2;
+            }
+        }
+
+        @media screen and (min-width:300px) {
+            #wrapper li{
+                flex-direction: column;
+            }
+            #wrapper li input {
+                flex: 3;
+            }
+        }
+        @media screen and (min-width:150px) {
+            #wrapper li{
+                flex-direction: column;
+            }
+            #wrapper li input {
+                flex: 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Flexbox Align Form-Elements</h1>
+    <form action="">
+        <ul id="wrapper">
+            <li>
+                <label>Name</label>
+                <input type="text" name="">
+            </li>
+            <li>
+                <label>Class Name</label>
+                <input type="text" name="">
+            </li>
+            <li>
+                <label>Email</label>
+                <input type="email" name=""/>
+            </li>
+            <li>
+                <button type="button">Save</button>
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>

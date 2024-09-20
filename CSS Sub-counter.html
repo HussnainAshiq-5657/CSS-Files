@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sub-Counter</title>
+    <style>
+        body{
+            font-family: arial,verdana,impact;
+            counter-reset: source 0;
+        }
+        h1{
+            text-align: left;
+            font-size: 40px;
+            font-family: impact;
+            color: tomato;
+           
+            margin-bottom: 34px;
+        }
+        h2{
+            margin-left: 180px;
+            counter-reset: sub-source 0;
+            
+        }
+        h1::before{
+            content: "Section " counter(source) " : ";
+            counter-increment: source 1;
+        }
+        h2::before{
+            content: counter(source) "." counter(sub-source) " : ";
+            counter-increment: sub-source 1;
+        }
+    </style>
+</head>
+<body>
+   
+    <h1>HTML AND CSS</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>Tailwind Tutorial</h2>
+
+    <h1>JAVASCRIPT</h1>
+    <h2>JAVASCRIPT Tutorial</h2>
+    <h2>jQuery Tutorial</h2>
+    <h2>JSON Tutorial</h2>
+   
+   <h1>SERVER SIDE</h1>
+   <h2>SQL Tutorial</h2>
+    <h2>PHP Tutorial</h2>
+  
+    
+   
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Before And After Pseudo-Elements</title>
+    <style>
+        body{
+            font-family: arial,impact,;
+        }
+        h1{
+            color: tomato;
+            font-size: 38px;
+            text-align: center;
+        }
+        p{
+            font-size: 40px;
+            margin: 200px auto 10px 70px;
+
+        }
+        p::before{
+            content: "Hello";
+            display: block;
+            background-color: red;
+            color: white;
+            margin-bottom: 16px;
+        }
+        p:hover::after{
+            background-color: green;
+            color: white;
+            content: "After";
+            display: block;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Before And After Pseudo-Elements</h1>
+    <p>
+        Learn Web Design From Us
+    </p>
+</body>
+</html>

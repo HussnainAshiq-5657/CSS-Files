@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ Container Query</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        /* .post{
+            border: 1px solid black;
+            width: 80%;
+            aspect-ratio: 2/1;
+            container-type:inline-size;
+            container-name:myPost ;
+        } */
+        .post2{
+            margin-top: 50px;
+            border: 1px solid blue;
+            width: 70%;
+            container-type:inline-size;
+            container-name: myPost myCard;
+        }
+        .card h1{
+            font-size: 2em;
+        }
+        @container myPost (max-width:400px){
+            .card h1{
+                color: orange;
+                font-size: 3em;
+            } 
+        }
+        @container myCard (max-width:200px){
+            .card h1{
+                color: blue;
+                font-size: 2em;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <h1>@ Container Query</h1>
+    <div class="post">
+        <div class="card">
+            <h1>Card title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt pariatur, eveniet quibusdam officiis consectetur fugiat sequi neque necessitatibus praesentium, perspiciatis, fugit modi voluptates. Dicta sit ullam molestiae necessitatibus corporis aspernatur!
+            </p>
+        </div>
+    </div>
+    <div class="post2">
+        <div class="card">
+            <h1>Card title 2</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt pariatur, eveniet quibusdam officiis consectetur fugiat sequi neque necessitatibus praesentium, perspiciatis, fugit modi voluptates. Dicta sit ullam molestiae necessitatibus corporis aspernatur!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Fill-Mode</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid firebrick;
+            background-color: black;
+            margin-left: 20px;
+            animation: sample 3s ease-in-out 0.5s infinite alternate;
+            animation-fill-mode: none;
+        }
+        #box:hover{
+            animation-play-state:paused;
+        }
+        @keyframes sample{
+      0%{background-color: yellow; width: 220px; height: 220px;}
+      50%{background-color:tomato; width: 270px; height: 270px;}
+      100%{background-color: sienna; width: 300px; height: 300px;}
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 20px;">CSS Animation Fill-Mode</h1>
+    <div id="box">
+
+    </div>
+</body>
+</html>

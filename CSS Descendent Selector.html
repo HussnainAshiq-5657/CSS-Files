@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Descendan Selector</title>
+    <style>
+      #first{
+        border: 2px solid firebrick;
+         padding: 20px;
+      }
+      p{
+        color: red;
+      }
+      #first p{
+        color: saddlebrown;
+      }
+      span{
+        color: green;
+      }
+      #first p span{
+        color: aqua;
+      }
+    </style>
+</head>
+<body>
+    <h1>CSS Descendan Selector</h1>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ad dolore doloremque, voluptas quos asperiores rerum a deleniti praesentium, atque nisi laudantium velit? Provident corrupti sed, quas ratione vitae totam?
+    </p>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corrupti nesciunt odit facilis? Ipsum ab ducimus facilis nihil in a dignissimos perspiciatis quae. Nemo, maiores nihil iste sed consequatur a?
+</p>
+    <div id="first">
+        <span>Hello</span>
+        <p>Lorem ipsum dolor, sit <span>consectetur adipisicing elit. Esse</span>  laboriosam expedita ducimus officia voluptate ab accusamus saepe. Vitae, nulla enim! Tempora quaerat facere impedit corrupti dolores rem molestias aspernatur fugit!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, veritatis. Quisquam, porro fugit, perspiciatis maiores minima ipsam nihil ex suscipit nulla culpa, consectetur dolores molestias sed voluptatibus ratione eius tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo magni, obcaecati fuga porro ea commodi soluta doloremque rem harum esse exercitationem eos, illo quos, praesentium dolorem temporibus aut distinctio.</p>
+    </div>
+</body>
+</html>

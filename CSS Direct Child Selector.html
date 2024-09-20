@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Direct Child Selector</title>
+    <style>
+        #box{
+            border: 2px solid grey;
+            padding: 10px;
+        }
+        #box2{
+            border: 2px solid goldenrod;
+            padding: 10px;
+        }
+        #list li{
+            color:gray;
+        }
+        #list > li{
+            color: red;
+        }
+        #box2  p{
+            color: blue;
+        }
+        #box > p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Direct Child Selector</h1>
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed distinctio voluptatibus laudantium? Laboriosam repudiandae provident aliquid nulla nam eligendi! Ratione reprehenderit dolorem voluptate ipsum porro quia at, atque minus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed distinctio voluptatibus laudantium? Laboriosam repudiandae provident aliquid nulla nam eligendi! Ratione reprehenderit dolorem voluptate ipsum porro quia at, atque minus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed distinctio voluptatibus laudantium? Laboriosam repudiandae provident aliquid nulla nam eligendi! Ratione reprehenderit dolorem voluptate ipsum porro quia at, atque minus.</li>
+            </ul>
+       </li>
+       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos!</li>
+       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis!</li>
+         </ul>
+         <div id="box">
+           <p>
+            Lorem ipsum, dolor <span>sit amet consectetur adipisicing elit.</span> Deleniti sapiente, earum similique cum hic inventore labore exercitationem cumque sint velit dolores harum obcaecati fugiat expedita, modi aliquid rem minus neque.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio unde consequatur nemo voluptas laborum quaerat exercitationem temporibus obcaecati quis, rem fuga sed aspernatur eos, nesciunt nulla! Accusantium, tenetur earum.
+        </p>
+           
+            <div id="box2">
+                <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ut quisquam neque dolorum, deserunt assumenda quidem. Aperiam sint, architecto numquam totam atque necessitatibus ratione aliquid debitis, perferendis rem, asperiores exercitationem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit excepturi nulla culpa eaque optio, incidunt at error cupiditate ipsa quod magnam deserunt itaque totam autem nemo provident, consequatur doloribus?
+        </p>   
+        </div>
+         </div>
+</body>
+</html>

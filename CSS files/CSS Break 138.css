@@ -1,0 +1,10 @@
+h2.test{
+    /* break-before: page; */
+}
+#box{
+    /* break-before: page;
+    break-after: page; */
+}
+table{
+    break-inside: avoid;
+}

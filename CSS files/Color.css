@@ -1,0 +1,40 @@
+body{
+    background-color: slategrey;
+}
+
+#top-bar{
+    background-color: thistle;
+}
+#top-bar a{
+    color: #fff;
+}
+#header{
+      background-color: crimson;
+}
+#header h1{
+    color: white;
+}
+#menu{
+    background-color: mediumpurple;
+}
+#menu li a:hover{
+    color: white;
+    background-color: crimson;
+}
+#content{
+    background-color: wheat;
+}
+#content h2{
+
+    color: cyan;
+}
+#sidebar{
+    background-color: thistle;
+}
+#sidebar li a:hover{
+    color: white;
+    background-color: crimson;
+}
+#footer{
+    background-color: crimson;
+}

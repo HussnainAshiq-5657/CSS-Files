@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transtition</title>
+    <style>
+    #first{
+        width: 150px;
+        height: 150px;
+        background-color: pink;
+        border: 3px solid firebrick;
+        transition-property: width,background-color,height;
+        transition-duration: 2s,3s,4s;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-delay: 2s;
+        margin-bottom: 50px;
+    }
+    #first:active{
+        width: 300px;
+        background-color: orange;
+        height: 200px;
+    }
+    input{
+        width: 150px;
+        transition: width 1s linear 0s;
+        margin-bottom: 20px;
+    }
+    input:focus{
+        width: 300px;
+    }
+    
+    @media screen and (max-width:960px){
+        #first{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS Transtition</h1>
+    <div id="first">
+
+    </div>
+    <Label>Name</Label>
+    <input type="text" name="" placeholder="Enter Your Name">
+</body>
+</html>

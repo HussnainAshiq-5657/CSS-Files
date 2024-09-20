@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Table</title>
+    <style>
+        body{
+            font-family: arial verdana;
+            line-height: 25px;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #table{
+            display: table;
+            width: 600px;
+            border: 1px solid black;
+            margin: 0px auto;
+        }
+        .column{
+            display:table-cell;
+            padding: 10px;
+            border: 1px solid saddlebrown;
+        }
+        .row{
+            display: table-row;
+        }
+        #header-group{
+            text-align: center;
+            display: table-header-group;
+            background-color: lightblue;
+            font-weight: bold;
+        }
+        #footer-group{
+            text-align: center;
+            display: table-footer-group;
+            background-color: lightsalmon;
+            font-weight: bold;
+        }
+        #row-group{
+            display: table-row-group;
+            background-color: pink;
+        }
+           #caption{
+            text-align: center;
+            padding: 10px;
+            color: red;
+           }
+    </style>
+</head>
+<body>
+    <h1>CSS Display Table</h1>
+    <div id="caption">
+        <h2>Student Information</h2>
+    </div>
+    <div id="table">
+        
+        <div id="header-group">
+            <div class="column">Number</div>
+        <div class="column">Name</div>
+        <div class="column">Age</div>
+        </div>
+        <div id="row-group">
+            <div class="row">
+                <div class="column">1</div>
+                <div class="column">Salman Khan</div>
+                <div class="column">25</div>
+            </div>    
+            <div class="row">
+                <div class="column">2</div>
+                <div class="column">Shahid Kapoor</div>
+                <div class="column">22</div>
+            </div>
+            <div class="row">
+                <div class="column">3</div>
+                <div class="column">Hussnain Naz</div>
+                <div class="column">18</div>
+            </div>
+        </div>
+    
+    <div id="footer-group">
+        <div class="column"></div>
+    <div class="column">Total Records </div>
+    <div class="column">3</div>
+    </div>
+    </div>
+</body>
+</html>

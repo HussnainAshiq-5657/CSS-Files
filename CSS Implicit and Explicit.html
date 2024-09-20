@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Implicit and Explicit Grid</title>
+    <style>
+        body{
+            font-family: arial verdana;
+        }
+        h1{
+            margin: 23px 13px 45px 145px;
+        }
+        .container{
+            width: 700px;
+            margin: 13px 0px 0px 57px;
+            background-color: #eee;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            grid-gap:10px;
+            grid-auto-rows: 80px;
+            grid-auto-flow: column;
+            grid-auto-columns: 0.5fr;
+        }
+        .items1{
+            background-color: tomato;
+        }
+        .items2{
+            background-color: yellow;   
+        }
+        .items3{
+            background-color: rebeccapurple;
+        }
+        .items4{
+            background-color: hotpink;
+        }
+        .items5{
+            background-color: sandybrown;
+        }
+        .items6{
+            background-color: pink;
+        }
+        .items7{
+            background-color: lightcoral;
+        }
+        .items8{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Implicit and Explicit Grid</h1>
+    <div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+        <div class="items items7">Nine</div>
+        <div class="items items8">Ten</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Auto-Fit and Auto-Fill</title>
+    <style>
+      body{
+        font-family: arial,verdana;
+      }
+      h1{
+        margin: 13px 0px 30px 45px;
+      }
+      .container{
+        width: 80%;
+        margin: 10px 20px 10px 56px;
+        background-color: #eee;
+        display: grid;
+        grid-template-columns: repeat(Auto-Fit, minmax(150px, 1fr));
+        grid-template-rows: repeat(2, 100px);
+      }
+      .items1{
+             background-color: tomato;
+      }
+      .items2{
+        background-color: lightgreen;
+    }
+    .items3{
+        background-color: saddlebrown;
+    }
+    .items4{
+        background-color: hotpink;
+        grid-column-end: ;
+    }
+    .items{
+        font-weight: bold;
+        padding: 10%;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>SS Grid Auto-Fit and Auto-Fill</h1>
+    <div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        
+    </div>
+</body>
+</html>

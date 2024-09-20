@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Aligning Grid Items</title>
+    <style>
+        body{
+            font-family: arial , verdana;
+        }
+        h1{
+            margin: 23px 0px 0px 156px;
+        }
+        .container{
+            width: 700px;
+            background-color: #eee;
+            margin: 34px 0px 0px 56px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            grid-gap: 10px;
+            grid-auto-rows: 70px;
+           /* align-items: start;
+            justify-items: start;*/
+            place-items: center center;
+        }
+        .items{
+            font-size: 18px;
+            color: #fff;
+        }
+        .items1{
+             background-color: tomato;
+        }
+        .items2{
+            background-color: pink;
+            /*align-self: center;
+            justify-self: end;*/
+            place-self: center end;
+            }
+
+         .items3{
+            background-color: lightseagreen;
+            grid-row: span 3;
+             }
+
+            .items4{
+                background-color: mediumpurple;
+                 }
+
+          .items5{
+            background-color: lightcoral;
+                    }
+
+          .items6{
+            background-color:hotpink;
+               }
+
+                .items7{
+                    background-color:thistle;
+                    grid-column: span 2;
+                  }
+
+                 .items8{
+                    background-color: yellow;
+                  }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Aligning Grid Items</h1>
+    <div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </div>
+</body>
+</html>

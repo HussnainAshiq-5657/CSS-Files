@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Overlapping Grid Items</title>
+    <style>
+        body{
+            background-color: grey;
+            font-family: arial,verdana;
+        }
+        h1{
+            margin: 10px 0px 0px 56px;
+        }
+        .container{
+            margin: 23px 0px 0px 45px;
+            background-color: #eee;
+            width: 300px;
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2,150px);
+           
+        }
+        .items1{
+           background-color: tomato;
+           grid-column: 1 / span 2;
+           grid-row: 1 /  span 2;
+           align-self: start;
+           justify-self: start;
+           z-index: 1;
+        }
+        .items2{
+            background-color: violet;
+            grid-column: 1 / span 2;
+           grid-row: 1 /  span 2;
+           align-self: center;
+           justify-self: center;
+           z-index: 2;
+        }
+        .items3{
+            background-color: rosybrown;
+            grid-column: 1 / span 2;
+           grid-row: 1 /  span 2;
+           align-self: end;
+           justify-self: end;
+           z-index: 3;
+        }
+        .items{
+            max-width: 120px;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Overlapping Grid Items</h1>
+    <div class="container">
+        <div class="items items1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. At, minima?</div>
+        <div class="items items2">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. At, minima?</div>
+        <div class="items items3">Three Lorem ipsum dolor sit amet consectetur adipisicing elit. At, minima?</div>
+    </div>
+</body>
+</html>

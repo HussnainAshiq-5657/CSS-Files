@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        :root{
+            --mainColor:brown;
+            --headFont:impact;
+            --pFont:verdana;
+        }
+        body{
+            background-color: slategrey;
+        }
+        #wrapper{
+       width: 1000px;
+       border: 2px solid firebrick;
+       margin: 0px auto;
+        }
+        #header{
+            background-color: var(--mainColor);
+            margin-top: -22px;
+            height: 100px;
+            
+        }
+        #header h1{
+            font-family: var(--headFont);
+       text-align: center;
+          padding: 20px 10px 10px 10px;
+       
+        }
+        #menu{
+            background-color: lightsalmon;
+        }
+        #menu li{
+        display: inline-block;
+        }
+        #menu li a{
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        }
+        #menu li a:hover{
+            color: white;
+            background-color: var(--mainColor);
+        }
+        #menu ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        #content{
+            background-color: white;
+            float: left;
+            width: 800px;
+            padding: 20px;
+            min-height: 400px;
+            box-sizing: border-box;
+            --m-color:red;
+            color:var(--m-color)
+        }
+        #content h2{
+            color: var(--mainColor);
+        }
+        #content p{
+            font-family: var(--pFont);
+        }
+        #sidebar{
+            background-color: lightblue;
+            float: right;
+            width: 200px;
+            min-height: 471px;
+            color: var(--m-color);
+        }
+        #sidebar li a:hover{
+            color:white;
+            background-color: aquamarine;
+        }
+        #sidebar li a{
+            text-decoration: none;
+        }
+        #footer{
+            background-color:var(--mainColor);
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+    @media screen and (max-width:1020px){
+        #wrapper{
+            width: 800px;
+        }
+        #content{
+            width: 80%;
+        }
+        #sidebar{
+            width: 20%;
+        }
+    }
+    @media screen and (max-width:810px){
+        #wrapper{
+            width: 500px;
+        }
+        #content{
+            width: 65%;
+        }
+        #sidebar{
+            width: 35%;
+        }
+    }
+    @media screen and (max-width:510px){
+        #wrapper{
+            width: auto;
+        }
+        #content{
+            width: 100%;
+            float: none;
+        }
+        #sidebar{
+            width: 100%;
+            float: none;
+        }
+        #header h1{
+            text-align: center;
+            padding: 20px 0px 0px 0px;
+        }
+    }
+       
+            
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>Yahoo Baba</h1>
+      </div>
+      <div id="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <h2>Sub Heading 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem placeat fuga quasi quis delectus consequatur corrupti ipsum deserunt? Iure reprehenderit, sequi qui sapiente repudiandae quisquam rem ea dicta in consectetur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad dicta dolorem consequuntur rerum quod in, doloremque sunt eos ea reiciendis corrupti dolores provident nulla magnam quia quam aliquid cum.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi magnam unde delectus qui nisi esse asperiores obcaecati optio vel iste tempore ipsum quam eius suscipit aut libero, quos porro inventore?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio magnam consequuntur unde nemo excepturi molestias magni sapiente aliquam, esse nam velit deserunt beatae, voluptas eos, laboriosam numquam quidem qui. Tempore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores beatae dolorum nesciunt facilis sint fugiat at fugit blanditiis rem aliquid vero eos tempora mollitia, ex natus nisi accusantium nostrum labore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus a neque voluptatibus accusantium, ipsam deserunt facilis numquam officiis fugiat quo, sapiente iusto! Aperiam consequuntur neque iste porro fugiat velit tenetur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime, modi dignissimos eos rem dolorum. Asperiores, at laboriosam! Fugit vero labore laboriosam recusandae mollitia nam voluptatem, dolore harum dicta quod.
+        </p>
+      </div>
+      <div id="sidebar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+      <div id="footer">
+        hussniannaz18@gmail.com
+      </div>
+    </div>
+</body>
+</html>

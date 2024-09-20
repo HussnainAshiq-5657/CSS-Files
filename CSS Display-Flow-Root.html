@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display : Flow-Root</title>
+    <style>
+        #parent{
+          width: 600px;
+          margin: 50px 20px;
+          border: 2px solid firebrick;
+          display: flow-root;
+        }
+        #child{
+            width:100px;
+            height:100px;
+            background-color: red;
+            float: left;
+            box-sizing: border-box;
+        }
+        #sub-child{
+            width:100px;
+            height:100px;
+            background-color:wheat;
+            float: right; 
+            box-sizing: border-box;
+        }
+        #parent:hover{
+            #child{
+               
+                background-color: tomato;
+            }
+            #sub-child{
+                background-color: violet;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>CSS Display : Flow-Root</h1>
+    <div id="parent">
+        <div id="child">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div id="sub-child">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </div>
+    </div>
+</body>
+</html>

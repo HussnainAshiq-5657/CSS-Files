@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Image</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 30px;
+        }
+        #first{
+           width: 350px;
+           min-height: 350px;
+           text-align: justify;
+           padding: 20px;
+           background-color: thistle;
+           border: 21px solid black;
+           
+           border-image-slice:38 33% 33% 33%;
+         border-image-width:1.5em 1.5em 1.5em 1.5em;
+          border-image-outset:0px 0px 0px 0px;
+       border-image-repeat:round round;
+             border-image-source:url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-2.png");
+            border-style:solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Border Image</h1>
+    <div id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius fuga reiciendis, doloribus illum eos sunt explicabo. In eligendi rem maxime eaque autem ipsa non eum? Voluptatibus perferendis quidem mollitia.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum aperiam vitae mollitia provident soluta a doloribus nesciunt, voluptatum atque, minus harum dolor illum dicta hic ratione neque? Atque, beatae!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maxime similique nam ea animi qui culpa necessitatibus tempora reiciendis consectetur exercitationem facilis unde reprehenderit deserunt quisquam, eos, quas quasi iusto.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, laudantium voluptatibus ipsam iure libero nemo tempore exercitationem eos illum nam, soluta nihil numquam! Dolore atque cupiditate beatae ducimus quibusdam accusantium.
+    </div>
+</body>
+</html>

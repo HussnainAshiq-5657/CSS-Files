@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selectors</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p{
+        font-size: 20px;
+        line-height: 22px;
+      }
+      img[alt]{
+        opacity: 0.6;
+      }
+      img[title]{
+        border: 2px solid red;
+        opacity: 0.5;
+      }
+      input[type]{
+        border: 2px solid firebrick;
+      }
+      a[target]{
+        color: red;
+      }
+      img[src$=".jpg"]{
+       border: 2px solid black;
+      }
+    </style>
+</head>
+<body>
+    <h1>CSS Attribute Selectors</h1>
+      <img src="Pictures/cat.jpg" alt="The Picture of Cat" width="200px"/>
+      <p>
+        Lorem ipsum dolor sit, amet<a href="" target="">consectetur adipisicing elit</a>  Molestias autem debitis obcaecati alias incidunt ipsam vitae, error atque tenetur, placeat voluptatibus numquam quis. Sed quae assumenda expedita, mollitia veritatis impedit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="" target="">Dignissimos, est possimus</a> quasi enim tempore rerum voluptas ab libero <a href="">illum pariatur alias</a>, quis delectus quia officiis cupiditate odio eligendi nemo nisi.
+      </p>
+      <img src="Pictures/Flower.avif" title="The Picture of Flower" width="200px"/>
+      <form>
+        <fieldset>
+            <legend>Enter Your Personal Details</legend>
+            <label>Name</label>
+            <input type="name" name="" placeholder="Enter Your Name"/>
+            <br/>
+            <br/>
+            <label>Password</label>
+            <input type="password" name="" placeholder="Enter Your password"/>
+            <br/>
+            <br/>
+            <label>Gender</label>
+            <input type="radio" name="gender" id="male"/>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female"/>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="transgender"/>
+            <label for="transgender">TransGender</label>
+        </fieldset>
+      </form>
+</body>
+</html>

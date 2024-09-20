@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Order</title>
+    <style>
+        body{
+            font-family: arial, verdana;
+        }
+        h1{
+            margin: 12px 0px 0px 14px;
+        }
+        .container{
+            height: 150px;
+            border: 1px solid rgba(255,0,0,0.4);
+            background-color: #eee;
+            margin: 14px 0px 0px 12px;
+            display: flex;
+        }
+        .items1{
+            background-color: pink;
+            order: -2;
+        }
+       .items2{
+        background-color: violet;
+        order: -1;
+       }
+       .items3{
+        background-color: saddlebrown;
+        order: 2;
+       }
+       .items4{
+        background-color:tomato;
+        order:1 ;
+       }
+       .items5{
+        background-color:royalblue;
+       }
+        
+        .items{
+            font-size: 18px;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flexbox Order</h1>
+    <div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items4">Five</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FullScreen PseudoClass</title>
+    <style>
+        body{
+            font-family: arial,verdana;
+            margin: 0px;
+            font-size: 16px;
+        }
+        #box img{
+            background-color: lightblue;
+            width: 300px;
+            height: 200px;
+        }
+        #box:fullscreen{
+            background: #aa4b6b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-size: 35px;
+        }
+        #box:fullscreen p{
+            color: red;
+        }
+        #box:not(:fullscreen) p{
+            color: greenyellow;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS FullScreen PseudoClass</h1>
+    <div id="box">
+        <img src="Pictures/Cartoon.avif" alt="The Picture Of Cartoon">
+    </div>
+    <br/>
+    <button onclick="document.getElementById('box').requestFullscreen();">
+         Go FullScreen Mode
+       </button>
+</body>
+</html>

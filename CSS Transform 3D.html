@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform 3D</title>
+    <style>
+        body{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #class{
+         border: 2px solid firebrick;
+         width: 350px;
+         height: 250px;
+         margin: 100px 0 0 100px;
+         background-color: gray;
+         text-align: center;
+         font-size: 1em;
+        }
+        #box{
+            width:350px ;
+            height:250px ;
+            background-color: tomato;
+            
+            transform:perspective(800px) scale3d(1,1,1) rotateX(60deg);
+            transition: all 2s ease-in-out;
+        }
+        #box:hover{
+            transform: scale3d(2,2,1);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transform 3D</h1>
+    <div id="class">
+        <div id="box">
+          
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum facilis nesciunt adipisci! Quae eveniet doloribus pariatur vitae sit non et quisquam voluptate nisi? Cum ducimus ullam harum placeat dolore.
+        </div>
+    </div>
+    <audio controls autoplay loop muted>
+        <source src="Songs/Falak_Tak__Cover____Romantic_Love_Song___Hindi_Songs___Old_Song_New_Version___Ashwani_Machal(256k).mp3" type="audio/mp4"/>
+      </audio>
+
+</body>
+</html>

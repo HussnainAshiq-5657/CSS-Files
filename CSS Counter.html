@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counter</title>
+    <style>
+        body{
+            font-family: arial,verdana,impact;
+            counter-reset: source 0;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: impact;
+            color: tomato;
+        }
+        h2::before{
+            content:"Chapter " counter(source,upper-roman) " : ";
+            counter-increment: source 1;
+             color:wheat;
+             background-color: crimson;
+             border: 1px solid saddlebrown;
+             padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Counter Increment</h1>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque architecto blanditiis dolorum voluptatem, obcaecati aliquam repudiandae sapiente, perferendis dolor dicta autem, velit eligendi! Aperiam placeat maiores reprehenderit molestiae vitae quod?</p>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque architecto blanditiis dolorum voluptatem, obcaecati aliquam repudiandae sapiente, perferendis dolor dicta autem, velit eligendi! Aperiam placeat maiores reprehenderit molestiae vitae quod?</p>
+   
+   <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque architecto blanditiis dolorum voluptatem, obcaecati aliquam repudiandae sapiente, perferendis dolor dicta autem, velit eligendi! Aperiam placeat maiores reprehenderit molestiae vitae quod?</p>
+    
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque architecto blanditiis dolorum voluptatem, obcaecati aliquam repudiandae sapiente, perferendis dolor dicta autem, velit eligendi! Aperiam placeat maiores reprehenderit molestiae vitae quod?</p>
+
+</body>
+</html>

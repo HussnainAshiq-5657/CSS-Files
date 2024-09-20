@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Gap</title>
+    <style>
+        body{
+            font-family: arial verdana;
+        }
+        h1{
+            margin: 0px 0px 0px 40px;
+        }
+        .container{
+            background-color: #eee;
+            margin: 30px 89px 20px 45px;
+            width: 800px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100px 100px;
+           grid-gap: 10px 20px;
+        }
+        .Items1{
+           background-color:orangered ;
+     }
+     .Items2{
+           background-color:yellowgreen ;
+     }
+     .Items3{
+           background-color:slateblue ;
+     }
+     .Items4{
+           background-color:hotpink ;
+     }
+     .Items5{
+           background-color:royalblue ;
+     }
+     .Items6{
+           background-color:goldenrod ;
+     }
+  .Items{
+    color: #fff;
+    font-size: 23px;
+  }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Grid</h1>
+    <div class="container">
+        <div class="Items Items1">First</div>
+        <div class="Items Items2">Second</div>
+        <div class="Items Items3">Third</div>
+        <div class="Items Items4">Fourth</div>
+        <div class="Items Items5">Fifth</div>
+        <div class="Items Items6">Sixth</div>
+    </div>
+</body>
+</html>

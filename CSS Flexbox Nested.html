@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex margin auto</title>
+    <style>
+body{
+            font-family: arial;
+        }
+        h1{
+            margin: 23px 0px 0px 156px;
+        }
+        .container{
+            background-color: #eee;
+            margin: 12px 0px 0px 60px;
+            display: flex;
+            border: 2px solid black;
+            flex-direction: column;
+        
+        }
+        .items1{
+           background-color: tomato;
+           
+        }
+        .items2{
+            background-color: thistle;
+            display: flex;
+        }
+        .items3{
+            background-color: gold;
+
+            
+        }
+        .items2 > .subitems{
+            color: purple;
+            background-color: wheat;
+            flex-grow: 1;
+            margin:4px
+        }
+
+        
+        .items{
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            height: 60px;
+        
+        height: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flex Basis</h1>
+            <div class="container">
+                <div class="items items1">One</div>
+        <div class="items items2">
+            <div class="subitems subitems1">A</div>
+            <div class="subitems subitems2">B</div>
+            <div class="subitems subitems3">C</div>
+        </div>
+        <div class="items items3">Three</div>
+       
+            </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Creating Grid</title>
+    <style>
+        body{
+            font-family: arial impact;
+        }
+     .container{
+        background-color: #eee;
+        width: 700px;
+        height: 800px;
+        margin: 70px 0px 0px 50px;
+        display: grid;
+        grid-template-columns: 300px auto 200px;
+        grid-template-rows: 0.4fr 200px;
+       grid-gap:20px;
+     }
+     .items1{
+           background-color:orangered ;
+     }
+     .items2{
+           background-color:yellowgreen ;
+     }
+     .items3{
+           background-color:slateblue ;
+     }
+     .items4{
+           background-color:hotpink ;
+     }
+     .items5{
+           background-color:royalblue ;
+     }
+     .items6{
+           background-color:goldenrod ;
+     }
+    </style>
+</head>
+<body>
+    <h1>CSS Creating Grid</h1>
+    <div class="container">
+        <div class=" item items1">First</div>
+        <div class=" item items2">Second</div>
+        <div class=" item items3">Third</div>
+        <div class=" item items4">Four</div>
+        <div class=" item items5">Five</div>
+        <div class=" item items6">Six</div>
+    </div>
+   
+</body>
+</html>

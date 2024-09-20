@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Hyphens and Hyphenate Characters</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        #box{
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            padding: 10px;
+            margin: 30px;
+            hyphens: auto;
+            hyphenate-character: '#';
+            hyphenate-limit-chars: 20 10 10;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Hyphens and Hyphenate Characters</h1>
+    <div id="box">
+        Lorem ipsum dolor sit amet, consecteturconsecteturconsectetur adipisicing elit. Nihil asperiores quae sapiente tenetur voluptatem alias .
+    </div>
+</body>
+</html>
